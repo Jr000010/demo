@@ -76,6 +76,123 @@
 <body>
 
 <header>
+    <h1>Delicious Bites</h1>
+    <p>Experience the Taste of Excellence</p>
+</header>
+
+<div class="container">
+    <section class="contact-info">
+        <div>
+            <i class="fas fa-phone"></i>
+            <p>(123) 456-7890</p>
+        </div>
+        <div>
+            <i class="fas fa-envelope"></i>
+            <p>info@deliciousbites.com</p>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <section class="address">
+        <h2>Visit Us</h2>
+        <p>123 Main Street</p>
+        <p>New York, NY 10001</p>
+    </section>
+</div>
+This example showcases a restaurant's name, short description, contact information (phone number, email address, and social links), and physical address. You can further customize the design and content based on specific business needs.
+
+
+
+User
+Make it mobile responsive
+
+ChatGPT
+To make the template mobile responsive, we can use media queries to adjust the layout and styling based on the screen size. Here's the updated HTML code with mobile responsiveness:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Name</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .contact-info {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact-info div {
+        text-align: center;
+    }
+    .contact-info i {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .address {
+        margin-top: 30px;
+    }
+    .social-links a {
+        color: #333;
+        text-decoration: none;
+        margin-right: 10px;
+        transition: color 0.3s;
+    }
+    .social-links a:hover {
+        color: #666;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 600px) {
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .contact-info {
+            flex-direction: column;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
     <h1>Company Name</h1>
     <p>Short Description of the Company</p>
 </header>
@@ -105,6 +222,23 @@
         <p>City, State ZIP Code</p>
     </section>
 </div>
+
+</body>
+</html>
+In this updated code:
+
+Media queries are used to adjust font sizes, layout, and spacing for smaller screens (max-width: 600px).
+The flex-direction: column; property is applied to the .contact-info section to stack the contact information vertically on smaller screens.
+Font sizes are reduced for better readability on mobile devices.
+This implementation ensures that the website layout and content are optimized for both desktop and mobile viewing. Adjustments can be made as needed to further enhance the responsiveness based on specific design preferences.
+
+
+
+
+
+Message ChatGPT…
+
+ChatGPT can make mistakes. Consider checking important 
 
 </body>
 </html>
